@@ -254,7 +254,13 @@ export function SidebarHistory({ user }: { user: User | undefined }) {
     const now = new Date();
     const oneWeekAgo = subWeeks(now, 1);
     const oneMonthAgo = subMonths(now, 1);
-
+    return {
+      today: [],
+      yesterday: [],
+      lastWeek: [],
+      lastMonth: [],
+      older: []
+    };
     return chats.reduce(
       (groups, chat) => {
         const chatDate = new Date();

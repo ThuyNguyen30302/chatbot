@@ -29,21 +29,15 @@ export async function generateTitleFromUserMessage({
   return title;
 }
 
-// export async function deleteTrailingMessages({ id }: { id: string }) {
-//   const [message] = await getMessageById({ id });
+export async function deleteTrailingMessages({ id }: { id: string }) {
+}
 
-//   await deleteMessagesByChatIdAfterTimestamp({
-//     chatId: message.chatId,
-//     timestamp: message.createdAt,
-//   });
-// }
-
-// export async function updateChatVisibility({
-//   chatId,
-//   visibility,
-// }: {
-//   chatId: string;
-//   visibility: VisibilityType;
-// }) {
-//   await updateChatVisiblityById({ chatId, visibility });
-// }
+export async function updateChatVisibility({
+  chatId,
+  visibility,
+}: {
+  chatId: string;
+  visibility: VisibilityType;
+}) {
+  // await updateChatVisiblityById({ chatId, visibility });
+}
